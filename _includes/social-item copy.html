@@ -1,0 +1,13 @@
+{% if entry.title == 'instagram' %}
+<svg class="svg-icon blue">
+  <use xlink:href="{{ '/assets/minima-social-icons.svg#' | append: entry.platform | relative_url }}"></use>
+</svg>
+{% elsif entry.title == 'facebook' %}
+<svg class="svg-icon orange">
+  <use xlink:href="{{ '/assets/minima-social-icons.svg#' | append: entry.platform | relative_url }}"></use>
+</svg>
+{% else %}
+<svg class="svg-icon grey">
+  <use xlink:href="{{ '/assets/minima-social-icons.svg#' | append: entry.platform | relative_url }}"></use>
+</svg>
+{% endif %}

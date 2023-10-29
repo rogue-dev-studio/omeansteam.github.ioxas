@@ -236,6 +236,49 @@ pre {
 .grey {
   color: #828282;
 }
+a .co-linkedin {
+  transition: transform 1s;
+//   fill:  gray;
+}
+a .co-linkedin:hover {
+  fill: blue !important;
+  color:transparent !important;
+  transform: scale(2,4);
+  -webkit-transform: scale(2,4);
+  -moz-transform: scale(2,4);
+  -ms-transform: scale(2,4);
+  -o-transform: scale(2,4);
+}
+a .co-instagram {
+  transition: transform 1s;
+//   fill:  gray;
+}
+a .co-instagram:hover {
+  fill: url(#gradient-instagram) gray !important;
+  color:transparent !important;
+  transform: scale(2,4);
+  -webkit-transform: scale(2,4);
+  -moz-transform: scale(2,4);
+  -ms-transform: scale(2,4);
+  -o-transform: scale(2,4);
+}
+// a .co-instagram:hover {
+//   color: #333 !important;
+//   //background: #d6249f;
+//   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+//   border-radius: 20%;
+//   -webkit-border-radius: 20%;
+//   -moz-border-radius: 20%;
+//   -ms-border-radius: 20%;
+//   -o-border-radius: 20%;
+// }
+
+#gradient-instagram {
+  --color-stop-1: #fdf497;
+  --color-stop-2: #fd5949;
+  --color-stop-3: #d6249f;
+  --color-stop-4: #285AEB;
+}
 
 .svg-icon {
   width: 1.25em;

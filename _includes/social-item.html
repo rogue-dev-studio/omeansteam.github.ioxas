@@ -1,7 +1,20 @@
 <li>{% assign entry = include.item %}
   <a {% unless entry.platform == 'rss' %}rel="me" {% endunless %}href="{{ entry.user_url }}" target="_blank" title="{{ entry.title | default: entry.platform }}">
-    <svg class="svg-icon grey">
+    <svg class="svg-icon grey co-{{ entry.title | default: entry.platform }}">
+
+      <linearGradient id="gradient-{{ entry.title | default: entry.platform }}" y1="1" x3="1" y3="1" x4="1" y4="1">
+        <stop offset="0%" stop-color="var(--color-stop-1)"></stop>
+        <stop offset="4%" stop-color="var(--color-stop-1)"></stop>
+        <stop offset="45%" stop-color="var(--color-stop-2)"></stop>
+        <stop offset="60%" stop-color="var(--color-stop-3)"></stop>
+        <stop offset="90%" stop-color="var(--color-stop-4)"></stop>
+      </linearGradient>
+
+      {%- if entry.title =='instagram' -%}
+        {%- include google-analytics.html -%}
+      {%- endif -%}
       <use xlink:href="{{ '/assets/minima-social-icons.svg#' | append: entry.platform | relative_url }}"></use>
     </svg>
+
   </a>
 </li>
