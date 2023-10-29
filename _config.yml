@@ -12,8 +12,8 @@ description: >
 
 # Build settings
 
-# theme: minima
-theme: jekyll-bootstrap-theme
+theme: minima
+# theme: jekyll-bootstrap-theme
 
 plugins:
   - jekyll-feed
