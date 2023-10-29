@@ -236,31 +236,45 @@ pre {
 .grey {
   color: #828282;
 }
-a .co-linkedin {
-  transition: transform 1s;
-//   fill:  gray;
+
+a .co-github {
+  transition: transform .3s ease;
 }
+
+a .co-github:hover {
+  fill: #0d1117 !important;
+  color:transparent !important;
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+}
+
+a .co-linkedin {
+  transition: transform .3s ease;
+}
+
 a .co-linkedin:hover {
   fill: blue !important;
   color:transparent !important;
-  transform: scale(2,4);
-  -webkit-transform: scale(2,4);
-  -moz-transform: scale(2,4);
-  -ms-transform: scale(2,4);
-  -o-transform: scale(2,4);
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
 }
 a .co-instagram {
-  transition: transform 1s;
-//   fill:  gray;
+  transition: transform .3s ease;
 }
 a .co-instagram:hover {
   fill: url(#gradient-instagram) gray !important;
   color:transparent !important;
-  transform: scale(2,4);
-  -webkit-transform: scale(2,4);
-  -moz-transform: scale(2,4);
-  -ms-transform: scale(2,4);
-  -o-transform: scale(2,4);
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
 }
 // a .co-instagram:hover {
 //   color: #333 !important;
